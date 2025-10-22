@@ -20,7 +20,7 @@ export async function translateText({ text, language }) {
       body: JSON.stringify({ text, language }),
     });
   } catch (netErr) {
-    // Network-level error (e.g., worker not running)
+    
     throw new Error(
       `Network error calling API. Is Wrangler running on ${API_BASE}? (${netErr.message})`
     );
