@@ -1,0 +1,10 @@
+name = "pollyglot-translate"
+main = "workers/translate/src/index.ts"
+compatibility_date = "2025-10-18"
+
+routes = [
+  # If deploying as a standalone Worker on your domain:
+  # "https://<your-domain>/*"
+]
+
+# For Cloudflare Pages with Functions, you can also deploy this Worker and bind via Pages project settings.
